@@ -1,0 +1,13 @@
+spring:
+  cloud:
+    function:
+      scan:
+        packages: com.xy.functions
+      definition: upcase|uppercase
+      web:
+        path: /function/
+  functional:
+    enabled: false
+  main:
+    allow-bean-definition-overriding: true
+    web-application-type: reactive
